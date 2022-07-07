@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <form class="row gy-3 align-items-center py-3">
+        <div class="col-12 col-lg-6">
+            <input type="number" class="form-control form__input" id="inputNum" placeholder="Nhập số n">
+        </div>
+        <div class="col-12 col-lg-6">
+            <button class="btn btn-primary me-1 mb-1" id="themSo">Thêm
+                số</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtArray"></span>
+    </div>
+    <hr />
+    <h4> Bài 1 :Tổng số dương</h4>
+    <form class="row gy-3 align-items-center px-2">
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="tinhTong">Tính tổng</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtSum"></span>
+    </div>
+    <h4>Bài 2: Đếm số dương</h4>
+    <form class="row gy-3 align-items-center px-2">
+
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="demSo">Đếm số</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtCount"></span>
+    </div>
+    <h4>Bài 3:Tìm số nhỏ nhất</h4>
+    <form class="row gy-3 align-items-center px-2">
+
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="timSoNhoNhat">Tìm số nhỏ nhất</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtMin"></span>
+    </div>
+    <h4>Bài 4 : Tìm số dương nhỏ nhất</h4>
+    <form class="row gy-3 align-items-center px-2">
+
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="timDuongNhoNhat">Tìm số dương nhỏ nhất</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtMinPos"></span>
+    </div>
+    <h4>Bài 5:Tìm số chẵn cuối cùng</h4>
+    <form class="row gy-3 align-items-center px-2">
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="timSoChan">Tìm số chẵn</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtEven"></span>
+    </div>
+    <h4> Bài 6 :Đổi chỗ</h4>
+    <form class="row gy-3 align-items-center px-2">
+        <div class="col-12 col-lg-6">
+            <input type="number" class="form-control form__input" id="inputIndex1"
+                placeholder="Nhập số vị trí 1">
+        </div>
+        <div class="col-12 col-lg-6">
+            <input type="number" class="form-control form__input" id="inputIndex2"
+                placeholder="Nhập số vị trí 2">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="doiCho">Đổi chỗ</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtChangePos"></span>
+    </div>
+    <h4>Bài 7 : Sắp xếp tăng dần</h4>
+    <form class="row gy-3 align-items-center px-2">                                               
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="timSoNguyenTo">Tìm số nguyên tố</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtIncrease"></span>
+    </div>
+    <h4>Bài 8:Tìm số nguyên tố đầu tiên</h4>
+    <form class="row gy-3 align-items-center px-2">                                               
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="timSoDauTien">Tìm số nguyên tố</button>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtPrime"></span>
+    </div>
+    <h4>Bài 9:Đếm số nguyên </h4>
+    <form class="row gy-3 align-items-center py-3">
+        <div class="col-12 col-lg-6">
+            <input class="form-control form__input" id="nhapSo_9"
+                placeholder="Nhập số">
+        </div>
+        <div class="col-12 col-lg-6">
+            <button class="btn btn-danger me-1 mb-1" id="btnThemSo_9">Thêm
+                số</button>
+        </div>
+        <div class="alert alert-success" role="alert">
+            👉<span id="soNguyen"></span>
+        </div> 
+        <div class="col-12 col-lg-6">
+            <button class="btn btn-primary me-1 mb-1" id="demSoNguyen">Đếm số nguyên</button>
+        </div>
+    </form>  
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtInt"></span>
+    </div>
+    <h4>Bài Tập 10: Đếm số dương và số âm</h4>
+    <form class="row gy-3 align-items-center px-2">                                               
+        <div class="col-12">
+            <button class="btn btn-primary me-1 mb-1" id="soSanh">So sánh</button>
+        </div>
+        <div class="alert alert-success" role="alert">
+            👉<span id="txtCompare"></span>
+        </div>
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
